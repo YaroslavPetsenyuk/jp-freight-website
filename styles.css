@@ -767,6 +767,31 @@ img {
 	box-shadow: 0 0 0 3px rgba(185, 111, 61, .14)
 }
 
+.lead-form .sms-consent {
+	display: grid;
+	grid-template-columns: 18px 1fr;
+	gap: 10px;
+	align-items: start;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 1.55;
+	text-transform: none;
+	color: #5E6164;
+}
+
+.lead-form .sms-consent input {
+	width: 18px;
+	height: 18px;
+	margin: 1px 0 0;
+	accent-color: var(--gold);
+}
+
+.sms-consent a, .footer-bottom a, .policy-content a {
+	color: var(--gold);
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+
 .full {
 	width: 100%
 }
@@ -821,6 +846,57 @@ footer {
 	display: flex;
 	justify-content: space-between;
 	font-size: 11px
+}
+
+.policy-hero {
+	padding: 82px 0 70px;
+	background: linear-gradient(145deg, #151719, #222529);
+	color: #F6F4F1;
+}
+
+.policy-hero h1 {
+	margin: 8px 0 14px;
+	color: #F6F4F1;
+	font-size: clamp(38px, 6vw, 64px);
+}
+
+.policy-hero p:last-child {
+	margin: 0;
+	color: #C8C4C0;
+}
+
+.policy-content {
+	max-width: 860px;
+	padding-top: 72px;
+	padding-bottom: 82px;
+}
+
+.policy-content h2 {
+	margin: 38px 0 12px;
+	font-size: 25px;
+}
+
+.policy-content p, .policy-content li {
+	color: var(--muted);
+	line-height: 1.8;
+}
+
+.policy-content li + li {
+	margin-top: 8px;
+}
+
+.privacy-highlight {
+	margin: 28px 0;
+	padding: 24px 26px;
+	border-left: 4px solid var(--gold);
+	border-radius: 0 8px 8px 0;
+	background: #F1EAE3;
+}
+
+.privacy-highlight p {
+	margin: 0;
+	color: var(--ink);
+	font-weight: 700;
 }
 
 .toast {
