@@ -1236,6 +1236,7 @@ footer {
 /* Form success and error messages */
 
 .form-message {
+  display: none;
   margin-top: 18px;
   padding: 16px 18px;
   border-radius: 6px;
@@ -1248,6 +1249,7 @@ footer {
 }
 
 .form-error {
+  display: none;
   margin-top: 18px;
   padding: 16px 18px;
   border-radius: 6px;
@@ -1256,6 +1258,19 @@ footer {
   color: #9f2525;
   font-size: 15px;
   font-weight: 600;
+}
+
+.form-message.is-visible, .form-error.is-visible {
+  display: block;
+}
+
+.lead-form button:disabled {
+  cursor: wait;
+  opacity: .72;
+}
+
+.lead-form input[type="date"] {
+  cursor: pointer;
 }
 
 

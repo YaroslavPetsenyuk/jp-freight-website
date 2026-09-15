@@ -316,12 +316,12 @@
             method="POST"
             >
 
-            <input type="hidden" name="subject" value="New JP Freight Quote Request">
+            <input type="hidden" name="_subject" value="New JP Freight Quote Request">
             <input type="text" name="_gotcha" style="display:none">
 
             <div class="field-row">
               <label>
-                Name
+                Contact Name
                 <input required name="name" autocomplete="name">
               </label>
 
@@ -345,20 +345,20 @@
 
             <div class="field-row">
               <label>
-                Origin
-                <input required name="origin">
+                Origin (optional)
+                <input name="origin">
               </label>
 
               <label>
-                Destination
-                <input required name="destination">
+                Destination (optional)
+                <input name="destination">
               </label>
             </div>
 
             <div class="field-row">
               <label>
-                Equipment
-                <select required name="equipment">
+                Equipment (optional)
+                <select name="equipment">
                   <option value="">Select</option>
                   <option>Dry Van</option>
                   <option>Reefer</option>
@@ -369,13 +369,13 @@
               </label>
 
               <label>
-                Pickup Date
-                <input required type="date" name="pickup_date">
+                Pickup Date (optional)
+                <input type="date" name="pickup_date">
               </label>
             </div>
 
             <label>
-              Shipment details
+              Shipment details (optional)
               <textarea
               name="shipment_details"
               rows="4"
@@ -420,7 +420,7 @@
         method="POST"
         >
 
-        <input type="hidden" name="subject" value="New JP Freight Carrier Application">
+            <input type="hidden" name="_subject" value="New JP Freight Carrier Application">
         <input type="text" name="_gotcha" style="display:none">
 
         <div class="field-row">
@@ -449,19 +449,19 @@
 
         <div class="field-row">
           <label>
-            MC Number
-            <input required name="mc_number">
+            MC Number (optional)
+            <input name="mc_number">
           </label>
 
           <label>
-            USDOT Number
+            USDOT Number (optional)
             <input name="usdot_number">
           </label>
         </div>
 
         <label>
-          Equipment
-          <select required name="equipment">
+          Equipment (optional)
+          <select name="equipment">
             <option value="">Select</option>
             <option>Dry Van</option>
             <option>Reefer</option>
@@ -505,24 +505,6 @@
 </footer>
 
 <div class="toast" role="status" aria-live="polite"></div>
-
-<script>
-  window.formspree = window.formspree || function () {
-    (formspree.q = formspree.q || []).push(arguments);
-  };
-
-  formspree('initForm', {
-    formElement: '#quote-form',
-    formId: 'xyegnowo'
-  });
-
-  formspree('initForm', {
-    formElement: '#carrier-application-form',
-    formId: 'xdenwbzl'
-  });
-</script>
-
-<script src="https://unpkg.com/@formspree/ajax@1" defer></script>
 
 <script src="script.js"></script>
 </body>
